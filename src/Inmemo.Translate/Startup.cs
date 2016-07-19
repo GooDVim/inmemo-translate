@@ -41,7 +41,7 @@ namespace Inmemo.Translate
             }
             else
             {
-                // app.UseAuthorizationMiddleware();
+                app.UseAuthorizationMiddleware();
             }
             app.UseMvc();
         }
