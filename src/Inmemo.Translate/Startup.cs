@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Inmemo.Translate.Middlewares;
 using Inmemo.Translate.Options;
+using Inmemo.Translate.Services;
 
 namespace Inmemo.Translate
 {
@@ -14,7 +15,12 @@ namespace Inmemo.Translate
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
             .AddEnvironmentVariables();
+            if (env.IsDevelopment())
+            {
+                builder.AddUserSecrets();
+            }
             Configuration = builder.Build();
         }
 
@@ -23,6 +29,8 @@ namespace Inmemo.Translate
             services.AddMvc();
             services.AddOptions();
             services.Configure<SecretKeyOptions>(Configuration);
+            services.Configure<YandexOptions>(Configuration);
+            services.AddSingleton<IDictionary, YandexDictionary>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

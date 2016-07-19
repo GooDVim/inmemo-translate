@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace Inmemo.Translate.ViewModel
+namespace Inmemo.Translate.Models
 {
-    public class TranslationsViewModel
+    public class LookupOutput
     {
         public List<string> Translations { get; set; }
     }
