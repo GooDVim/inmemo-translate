@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Inmemo.Translate", "src\Inmemo.Translate\Inmemo.Translate.xproj", "{D6643423-1072-4242-B8FD-84139E0C7AA0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Inmemo.Translate.Tests", "test\Inmemo.Translate.Tests\Inmemo.Translate.Tests.xproj", "{221C2207-1CB2-4024-8091-5ED968E01CB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6643423-1072-4242-B8FD-84139E0C7AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6643423-1072-4242-B8FD-84139E0C7AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6643423-1072-4242-B8FD-84139E0C7AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6643423-1072-4242-B8FD-84139E0C7AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221C2207-1CB2-4024-8091-5ED968E01CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221C2207-1CB2-4024-8091-5ED968E01CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221C2207-1CB2-4024-8091-5ED968E01CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221C2207-1CB2-4024-8091-5ED968E01CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
