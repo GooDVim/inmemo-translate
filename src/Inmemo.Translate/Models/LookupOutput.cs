@@ -4,6 +4,7 @@ namespace Inmemo.Translate.Models
 {
     public class LookupOutput
     {
-        public List<string> Translations { get; set; }
+        public bool PartOfSpeechIsFound { get; set; }
+        public List<Translation> Translations { get; set; }
     }
 }

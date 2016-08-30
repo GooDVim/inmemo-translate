@@ -1,8 +1,6 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Inmemo.Translate.Models;
 using Inmemo.Translate.Services;
-using Inmemo.Translate.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Inmemo.Translate.Controllers

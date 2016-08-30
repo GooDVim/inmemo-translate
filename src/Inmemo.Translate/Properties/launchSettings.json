@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Inmemo.Translate": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
